@@ -2,17 +2,32 @@
 <html>
 <head>
   <title>Dalimot Portfolio</title>
+    <link rel ="icon" type="image/png" href="faviconsolo.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
     body {
+      background-image: url('bgindex.jpg');
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: Comic Sans MS;
       color: #3a2c33;
       overflow-x: hidden;
       overflow-y: auto;
-      background-color: #f2a2c2;
+      background-color: #000000;
     }
+
+    header {
+            width: 100%;
+            margin: 0;
+            background-color: rgb(228, 204, 255);
+            border: 6px solid rgb(5, 5, 5);
+            color: rgb(102, 0, 0);
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
 
     .bg-image {
       position: fixed;
@@ -34,11 +49,20 @@
       z-index: -1;
     }
 
+    .portfolio-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 175px 75px 100px 75px;
+      gap: 40px; 
+    }
     .portfolio-card {
+      flex: 1;
       max-width: 550px;
-      margin: 100px auto;
-      background: rgba(255, 255, 255, 0.9);
+      margin: 175px 0 100px 75px;
+      background: rgba(231, 204, 255, 0.974);
       border-radius: 20px;
+      border:rgb(0, 0, 0) 8px solid;
       box-shadow: 0 8px 16px rgba(0,0,0,0.25);
       padding: 50px;
       text-align: center;
@@ -51,8 +75,8 @@
 
     h1, h2 {
       font-weight: bold;
-      color: #b35d8d;
-      text-shadow: 1px 1px #f2a2c2;
+      color: #dc9de6;
+      text-shadow: 1px 1px #f2a2c279;
       font-size: 24.5px;
       text-align: center; 
       line-height: 1.5;
@@ -72,7 +96,7 @@
     nav ul li a {
       display: block;
       text-decoration: none;
-      background-color: #d48cb3;
+      background-color: #d5aadd;
       color: white;
       padding: 12px;
       border-radius: 12px;
@@ -81,29 +105,54 @@
     }
 
     nav ul li a:hover {
-      background-color: #b35d8d;
+      background-color: #c0ade8;
       transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(179,93,141,0.3);
+      box-shadow: 0 4px 8px rgba(250, 143, 202, 0.3);
     }
+      footer {
+            text-align: center;
+            padding: 10px;
+           background-color: rgb(228, 204, 255);
+            color: rgb(155, 111, 160);
+            font-size: 16px;
+            border: 6px solid rgb(0, 0, 0);
+        }
+        </style>
+        </head>
 
-  </style>
-</head>
+ 
 
+<header>
+  <h1> ˖ ݁𖥔 ݁˖ Ellysz's 2nd Qtr Portfolio ⋆˚꩜｡</h1>
+
+</header>
 <body>
   <img src="bgindex.jpg" class="bg-image">
   <div class="overlay"></div>
 
-  <section class="portfolio-card w3-animate-opacity">
-    <h1>˖ ݁𖥔 ݁˖ Kathrin Ellysz’s Portfolio ⋆˚꩜｡</h1>
-      <h2> 2nd Qtr Version </h2>
+<section class="portfolio-container">
+
+   <div class="portfolio-card w3-animate-opacity">
+    <h1> Graded Exercises 𐔌՞. .՞𐦯 </h1>
     <nav>
       <ul>
         <li><a href="public/2Q1GPotassiumDalimot.html">Q2 First Graded Exercise</a></li>
-         <li><a href="public/Q21NGPotassiumDalimot.html">Q2 First Non-Graded Exercise</a></li>
           <li><a href="public/2Q2GPotassiumDalimot.html">Q2 Second Graded Exercise</a></li>
       </ul>
     </nav>
-  </section>
-
+  </div>
+ 
+  <div class="portfolio-card w3-animate-opacity">
+    <h1> Non-Graded Exercises ૮ ․ ․ ྀིა </h1>
+    <nav>
+      <ul>
+         <li><a href="public/Q21NGPotassiumDalimot.html">Q2 First Non-Graded Exercise</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<footer>
+    © 2025 Kathrin Ellysz Dalimot. All Rights Reserved.
+</footer>
 </body>
 </html>
