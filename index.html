@@ -7,6 +7,9 @@
   <style>
     body {
       background-image: url('bgindex.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
       margin: 0;
       padding: 0;
       font-family: Comic Sans MS;
@@ -111,12 +114,63 @@
     }
       footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px 0px 25px;
            background-color: rgb(228, 204, 255);
             color: rgb(155, 111, 160);
             font-size: 16px;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
             border: 6px solid rgb(0, 0, 0);
         }
+
+        footer p {
+          margin: 0 0 10px 0;
+          font-weight: bold;
+        }
+
+
+   
+
+    social-media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.social-media-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: underline;
+  color: black;
+  background: rgba(161, 151, 218, 0.881);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+    .social-media-links a:hover {
+  transform: translateY(-5px) scale(1.05); 
+  background: rgba(171, 231, 176, 0.911);
+  color: #9765a1;
+  text-decoration: none;
+  box-shadow: 0 8px 20px  rgba(134, 123, 196, 0.531);
+   }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-media-links a:hover .icon {
+  transform: rotate(10deg) scale(1.2);
+  box-shadow: 0 0 20px rgba(255, 150, 170, 0.7);
+}
         </style>
         </head>
 
@@ -152,7 +206,15 @@
   </div>
 </section>
 <footer>
-    © 2025 Kathrin Ellysz Dalimot. All Rights Reserved.
+   <p>© 2025 Kathrin Ellysz Dalimot. All Rights Reserved. </p>
+     <div class = "social-media-links">
+      <a href="https://www.instagram.com/kathrinellysz/">
+        <img src="insta.png" class="icon"> Instagram
+      </a>
+      <a href="https://github.com/ellysz24/CS3_2ndQtrPortfolioDalimot">
+        <img src="github.png" class="icon"> Github
+      </a>
+        </div>
 </footer>
 </body>
 </html>
