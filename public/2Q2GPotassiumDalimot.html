@@ -2,22 +2,15 @@
     <head>
        <title>Potassium 2029 Schedule | Friday</title>
         <link rel ="icon" type="image/png" href="favicon2grp.png">
+        <link rel="stylesheet" href ="https://jfkam.github.io/CS32ndQtrPortfolioKam_K16/public/style.css">
         <style>
-
-            body {
-                font-family: "Delius Swash Caps", cursive;
-                font-size: 20px;
+          body {
+               font-family: "Delius Swash Caps", cursive;
+               font-size: 20px;
                 background-image: url('background.png');
-                background-repeat: repeat;
-                background-attachment: fixed;
-                background-position: center;
-
-                 margin: 0;
             }
-
-           header {
-            width: 100%;
-            margin: 0;
+        
+        header {
             background-color: rgb(220, 113, 113);
             border: 14px solid rgba(252, 255, 189, 0.768);
             color: rgb(102, 0, 0);
@@ -26,29 +19,13 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             box-sizing: border-box;
         }
-
-        header {
-                 font-family: "Emilys Candy", serif;
-                 font-size: 25px;
-        }
-          header h1 {
-                text-align: center;
+       
+          header h1, header h2, header h3 {
                 color:rgb(255, 204, 204);
                 margin: 10px 0;
             }
 
-            header h2 {
-                color: rgb(255,204,204);
-                margin: 10px 0;
-            } 
-
-            header h3 {
-                color: rgb(255, 204, 204);
-                margin: 10px, 0;
-            }
-
-           
-            .main-content {
+        .main-content {
             width: 90%;
             margin: 40px auto;
             display: flex;
@@ -58,31 +35,15 @@
             flex-wrap: wrap;
         }
 
-         .left-part {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 50px;
-    }
-            table {
-            border-collapse: collapse;
-            width: 700px;
-            margin: 20px auto;
-            font-size: 22px;
-            background-color: rgb(255, 240, 240);
-            border-radius: 12px;
-            overflow: hidden;
-        }
             td, th {
                 border: 3px solid rgb(255, 153, 153);
                 color: rgb(255,102,102);
-                text-align: center;
                 padding: 10px;
             }
           
            th {
                 background-color: rgb(255, 204, 204);
-                color: rgb(102, 0, 0)
+                color: rgb(255, 102, 102);
            }
           img {
             width: 60px;
@@ -111,8 +72,10 @@
             align-items: center;
             gap: 10px;
         }
-        .essay-content {
+       
+ .essay-content {
             width: 600px;
+            display: inline-block;
             margin: 40px auto;
             background-color: #ffe6e6;
             padding: 20px 30px;
@@ -120,9 +83,8 @@
             border-radius: 12px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             color: #663333;
-            line-height: 1.6;
+         
         }
-
         .essay-content h2 {
          text-align: center;
          color: rgb(255,102,102);
@@ -130,67 +92,28 @@
          margin-bottom: 15px;
 }
     .schedule-links a{
-  display: flex;
-    font-family: "Delius Swash Caps", cursive;
-  flex-direction: row; 
-  align-items: center;
   color: rgb(0, 0, 0);
-  font-size: 20px;
-  background: rgba(224, 222, 215, 0.881);
-  padding: 15px 25px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  display: inline-block;
+  background: linear-gradient(135deg, rgba(247, 124, 143, 0.8), rgba(249, 229, 229, 0.8));
+  
 }
    .schedule-links a:hover {
-  transform: translateY(-5px) scale(1.05); 
   background: rgba(171, 231, 176, 0.911);
   color: #9765a1;
   text-decoration: none;
   box-shadow: 0 8px 20px  rgba(134, 123, 196, 0.531);
    }
 
-.icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  margin-right: 10px;
-  transition: transform 0.3s ease;
-}
-
 .schedule-links a:hover .icon {
-  transform: rotate(10deg) scale(1.2);
   box-shadow: 0 0 20px rgba(255, 150, 170, 0.7);
 }
-
-.fixed-img {
-    position: fixed;
-    bottom: 20px;
-    left:10px;
-    width: 400;
-    height: 250;
-    z-index: 1000;
-}
-
-emilys-candy-regular {
-  font-family: "Emilys Candy", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.delius-swash-caps-regular {
-  font-family: "Delius Swash Caps", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
         footer {
-            text-align: center;
-            padding: 10px;
              background-color: rgb(220, 113, 113);
-                border: 14px solid rgba(252, 255, 189, 0.768);
+             border: 14px solid rgba(252, 255, 189, 0.768);
             color: rgb(102, 0, 0);
-            font-size: 16px;
-            
+        }
+
+        footer h3 {
+            color: rgb(255, 173, 173)
         }
         </style>
         </head>
@@ -213,7 +136,7 @@ emilys-candy-regular {
     <section>
     <div class ="main-content">
 
-      <div class ="left-part">
+      <div class ="side-boxes">
         <div class="table-content">
             <table>
                 <tr>
@@ -305,7 +228,7 @@ emilys-candy-regular {
 
 <footer>
     © 2025 Kathrin Ellysz Dalimot. All Rights Reserved.
-    <h3>References</h3>
+    <h3>References:</h3>
       <ul>
         <li> (My Favicon, Picture on Table) Takawoyu. (n.d.). Post by @takawoyu · 30 images. Tumblr. https://www.tumblr.com/takawoyu/774188585541877760/samdinyan-png-google-drive</li>
         <li> (Mathea's Favicon) Lunox Image - Nicole. (2023, November 5). Mobile Legends Emote Sticker. Pinterest. https://ph.pinterest.com/pin/243475923598344844/</li>
